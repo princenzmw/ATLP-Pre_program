@@ -34,9 +34,9 @@ function updateRecords(records, id, prop, value) {
 
 // Only change code above this line
 return records;
+}
 
 console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
-}
 ```
 The `updateRecords` function takes `4 arguments` represented by the following function parameters:     
 
