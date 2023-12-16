@@ -2,10 +2,12 @@
 function updateRecords(records, id, prop, value) {
   if (value === '') {
     delete records[id][prop];
-  } else if (prop === 'tracks') {
+  }
+  else if (prop === 'tracks') {
     records[id][prop] = records[id][prop] || [];
     records[id][prop].push(value);
-  } else {
+  }
+  else {
     records[id][prop] = value;
   }
   
