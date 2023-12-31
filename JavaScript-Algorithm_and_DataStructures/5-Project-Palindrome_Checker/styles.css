@@ -71,6 +71,7 @@ h3 {
     border-bottom: 2px solid var(--purple);
     text-align: center;
     padding: 10px;
+    max-width: 100%;
 }
 #text-input:active {
     border: 1px solid var(--black);
