@@ -1,7 +1,7 @@
-const userInputString = document.getElementById('input-text');
+const userInputString = document.getElementById('text-input').value;
 const originalString = document.getElementById("user-text");
 const givAnswerToUser = document.getElementById('answer');
-const checkButton = document.getElementById('ckeck-btn');
+const checkButton = document.getElementById("check-btn");
 
 const isPalindrome = (inputString) => {
     if (inputString.length < 1) {
@@ -38,6 +38,7 @@ const printResult = () => {
 };
 
 checkButton.addEventListener('click', printResult);
+
 console.log(userInputString);
 console.log(original);
 console.log(givAnswerToUser);
