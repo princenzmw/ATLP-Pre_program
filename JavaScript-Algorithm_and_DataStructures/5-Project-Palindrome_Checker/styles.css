@@ -16,3 +16,7 @@ body {
   color: var(--white);
   background-color: var(--dark-grey);
 }
+.my-page {
+    display: flex;
+    flex-direction: column;
+}
