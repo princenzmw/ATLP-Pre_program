@@ -26,6 +26,15 @@ body {
 #main-entry {
     background-color: var(--white);
     box-shadow: 0px 5px var(--blue);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+#result {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
 #instruction {
