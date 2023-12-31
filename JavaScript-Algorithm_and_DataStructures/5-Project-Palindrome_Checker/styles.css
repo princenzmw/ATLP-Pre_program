@@ -19,4 +19,8 @@ body {
 .my-page {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+#main-entry {
+    background-color: #ffffff;
 }
