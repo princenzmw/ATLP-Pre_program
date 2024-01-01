@@ -1,17 +1,16 @@
-const userInputString = document.getElementById('text-input').value;
 const originalString = document.getElementById("result");
-const givAnswerToUser;
 const checkButton = document.getElementById("check-btn");
 
-const isPalindrome = (inputString) => {
-    if (inputString.length < 1) {
+const isPalindrome = () => {
+    const userInputString = document.getElementById('text-input').value;
+    if (userInputString.length < 1) {
         alert("Please input a value");
     }
-    else if (inputString.length == 1) {
+    else if (userInputString.length == 1) {
         originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
     }
 
-    const filteredWord = (inputString.replace(/[^a-zA-Z0-9]/g, '')).toLowerCase();
+    const filteredWord = (userInputString.replace(/[^a-zA-Z0-9]/g, '')).toLowerCase();
     const reversedWord = filteredWord.split('').reverse().join('');
 
     if (filteredWord === reversedWord) {
