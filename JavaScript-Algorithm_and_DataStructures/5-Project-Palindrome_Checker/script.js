@@ -17,6 +17,7 @@ const isPalindrome = () => {
     else {
         originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is not a palindrome.</span>`;
     }
+    document.getElementById('text-input').value = ''; 
 };
 
 checkButton.addEventListener('click', isPalindrome);
