@@ -1,43 +1,28 @@
 const userInputString = document.getElementById('text-input').value;
-const originalString = document.getElementById("user-text");
-const givAnswerToUser = document.getElementById('answer');
+const originalString = document.getElementById("result");
+const givAnswerToUser;
 const checkButton = document.getElementById("check-btn");
 
 const isPalindrome = (inputString) => {
     if (inputString.length < 1) {
         alert("Please input a value");
-        return;
     }
     else if (inputString.length == 1) {
-        return true;
+        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
     }
 
     const filteredWord = (inputString.replace(/[^a-zA-Z0-9]/g, '')).toLowerCase();
     const reversedWord = filteredWord.split('').reverse().join('');
 
     if (filteredWord === reversedWord) {
-        return true;
+        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
     }
     else {
-        return false;
+        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is not a palindrome.</span>`;
     }
 };
 
-const finalResult = (passedString) => {
-    if (isPalindrome(passedString) == true) {
-        return ' is a palindrome.';
-    }
-    else if (isPalindrome(passedString) == false) {
-        return ' is not a palindrome.';
-    }
-};
-
-const printResult = () => {
-    originalString.innerText = userInputString;
-    givAnswerToUser.innerText = finalResult(userInputString);
-};
-
-checkButton.addEventListener('click', printResult);
+checkButton.addEventListener('click', isPalindrome);
 
 console.log(userInputString);
 console.log(original);
