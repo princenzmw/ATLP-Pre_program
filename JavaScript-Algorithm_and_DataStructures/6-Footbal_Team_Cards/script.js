@@ -212,5 +212,8 @@ playersDropdownList.addEventListener('change', (e) => {
         case "goalkeeper":
             setPlayerCards(players.filter((player) => player.position === "goalkeeper"));
             break;
+        default:
+            setPlayerCards();
+            break;
     };
 });
