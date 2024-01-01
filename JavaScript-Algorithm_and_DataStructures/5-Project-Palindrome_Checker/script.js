@@ -7,17 +7,17 @@ const isPalindrome = () => {
         alert("Please input a value");
     }
     else if (userInputString.length == 1) {
-        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
+        originalString.innerText = `${userInputString} is a palindrome.`;
     }
 
     const filteredWord = (userInputString.replace(/[^a-zA-Z0-9]/g, '')).toLowerCase();
     const reversedWord = filteredWord.split('').reverse().join('');
 
     if (filteredWord === reversedWord) {
-        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
+        originalString.innerText = `${userInputString} is a palindrome.`;
     }
     else {
-        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is not a palindrome.</span>`;
+        originalString.innerText = `${userInputString} is not a palindrome.`;
     }
 };
 
