@@ -48,6 +48,7 @@ h3 {
     margin: 5px;
     padding: 10px;
     text-align: center;
+    color: var(--black);
 }
 #instruction {
     background-color: var(--green);
