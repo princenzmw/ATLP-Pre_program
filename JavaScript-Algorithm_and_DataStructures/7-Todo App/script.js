@@ -13,6 +13,8 @@ const descriptionInput = document.getElementById('description-input');
 const taskData = [];
 let currentTask = {};
 
+const reset = () => {};
+
 openTaskFormBtn.addEventListener('click', () => taskForm.classList.toggle('hidden'));
 closeTaskFormBtn.addEventListener('click', () => confirmCloseDialog.showModal());
 cancelBtn.addEventListener('click', () => confirmCloseDialog.close());
@@ -46,6 +48,6 @@ taskForm.addEventListener('submit', (e) => {
             </div>
         `)
     );
-});
 
-taskForm.classList.toggle('hidden');
+    taskForm.classList.toggle('hidden');
+});
