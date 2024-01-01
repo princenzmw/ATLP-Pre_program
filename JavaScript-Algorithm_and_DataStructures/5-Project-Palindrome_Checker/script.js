@@ -21,8 +21,3 @@ const isPalindrome = () => {
 };
 
 checkButton.addEventListener('click', isPalindrome);
-
-console.log(userInputString);
-console.log(original);
-console.log(givAnswerToUser);
-console.log(isPalindrome(userInputString));
