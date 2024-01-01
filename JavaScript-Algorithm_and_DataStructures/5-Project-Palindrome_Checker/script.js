@@ -5,19 +5,20 @@ const isPalindrome = () => {
     const userInputString = document.getElementById('text-input').value;
     if (userInputString.length < 1) {
         alert("Please input a value");
+        return;
     }
-    else if (userInputString.length == 1) {
-        originalString.innerText = `${userInputString} is a palindrome.`;
-    }
+    // else if (userInputString.length == 1) {
+    //     originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
+    // }
 
     const filteredWord = (userInputString.replace(/[^a-zA-Z0-9]/g, '')).toLowerCase();
     const reversedWord = filteredWord.split('').reverse().join('');
 
     if (filteredWord === reversedWord) {
-        originalString.innerText = `${userInputString} is a palindrome.`;
+        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is a palindrome.</span>`;
     }
     else {
-        originalString.innerText = `${userInputString} is not a palindrome.`;
+        originalString.innerHTML = `<span style="font-weight:700;">${userInputString} </span><span>is not a palindrome.</span>`;
     }
 };
 
