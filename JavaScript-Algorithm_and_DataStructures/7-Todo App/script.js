@@ -75,5 +75,5 @@ discardBtn.addEventListener('click', () => {
 taskForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    reset();
+    addOrUpdateTask();
 });
