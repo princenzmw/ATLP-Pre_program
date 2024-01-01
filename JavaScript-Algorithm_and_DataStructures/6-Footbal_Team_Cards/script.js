@@ -182,5 +182,7 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 const setPlayerCards = (arr = players) => {};
 playerCards.innerHTML += arr.map(({ name, position, number, isCaptain, nickname }) => {
-    `<div class="player-card"></div>`;
+    `<div class="player-card">
+        <h2>${name}</h2>
+    </div>`;
 });
