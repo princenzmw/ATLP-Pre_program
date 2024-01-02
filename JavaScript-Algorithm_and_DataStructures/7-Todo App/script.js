@@ -55,6 +55,7 @@ const deleteTask = (buttonEl) => {
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === buttonEl.parentElement.id
     );
+
     buttonEl.parentElement.remove();
     taskData.splice(dataArrIndex, 1);
 
@@ -86,6 +87,10 @@ const reset = () => {
     taskForm.classList.toggle('hidden');
     currentTask = {};
 };
+
+if (taskData.length) {
+    updateTaskContainer();
+}
 
 openTaskFormBtn.addEventListener('click', () => taskForm.classList.toggle('hidden'));
 
