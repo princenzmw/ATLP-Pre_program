@@ -17,6 +17,7 @@ const decimalToBinary = (input) => {
   
     input = quotient;
   }
+  console.log('Inputs: ', inputs);
 };
 
 const checkUserInput = () => {
